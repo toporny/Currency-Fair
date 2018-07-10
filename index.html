@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title></title>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" /> 
+		<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+		<meta content="utf-8" http-equiv="encoding">
+		<meta id="viewportMeta" name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	  	<link href="styles/css.css" rel="stylesheet" type="text/css" />
+	  	<link href="styles/fonts/stylesheet.css" rel="stylesheet" type="text/css" />
+
+	</head>
+
+    <body ng-app="authApp">
+
+<header>
+	<img class="logo" src="images/CF_logo_RGB_NEG.svg">
+</header>
+
+
+
+<section>
+	<nav>
+		<div class="nav_step active">
+			<div>Step1 <br>
+			 Transaction info</div>
+		</div>
+		<div class="nav_step">
+			<div>Step2 <br>
+			 Recipient info</div>
+		</div>
+		<div class="nav_step">
+			<div>Step3 <br>
+			 Make Payment</div>
+		</div>
+	</nav>	
+	<h2>Let's set up your transaction</h2>
+	<p>Specify the amount to be sent or recievied</p>
+</section>
+
+<aside>
+	aside
+</aside>
+
+<footer class="wrapper">
+		<div class="float-left">© 2018 CurrencyFair</div>
+		<div class="float-right">
+			<a href="#">Help & Support</a><a href="#">Legal Stuff</a>
+		</div>
+</footer>
+
+
+        <div class="container">
+            <div ui-view></div>
+        </div>        
+
+    </body>
+    
+<!--     <script type="text/javascript" src="./node_modules/angular/angular.js"></script>
+ --><!--     <script type="text/javascript" src="./node_modules/angular-ui-router/release/angular-ui-router.js"></script>
+ -->
+    <script type="text/javascript" src="./app/app.js"></script>
+
+</html>
+

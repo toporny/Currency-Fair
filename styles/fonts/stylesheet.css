@@ -1,0 +1,99 @@
+@font-face {
+    font-family: 'Post Grotesk';
+    src: url('PostGrotesk-Book.eot');
+    src: url('PostGrotesk-Book.eot?#iefix') format('embedded-opentype'),
+        url('PostGrotesk-Book.woff2') format('woff2'),
+        url('PostGrotesk-Book.woff') format('woff'),
+        url('PostGrotesk-Book.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Post Grotesk';
+    src: url('PostGrotesk-Medium.eot');
+    src: url('PostGrotesk-Medium.eot?#iefix') format('embedded-opentype'),
+        url('PostGrotesk-Medium.woff2') format('woff2'),
+        url('PostGrotesk-Medium.woff') format('woff'),
+        url('PostGrotesk-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Post Grotesk';
+    src: url('PostGrotesk-Light.eot');
+    src: url('PostGrotesk-Light.eot?#iefix') format('embedded-opentype'),
+        url('PostGrotesk-Light.woff2') format('woff2'),
+        url('PostGrotesk-Light.woff') format('woff'),
+        url('PostGrotesk-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Post Grotesk';
+    src: url('PostGrotesk-MediumItalic.eot');
+    src: url('PostGrotesk-MediumItalic.eot?#iefix') format('embedded-opentype'),
+        url('PostGrotesk-MediumItalic.woff2') format('woff2'),
+        url('PostGrotesk-MediumItalic.woff') format('woff'),
+        url('PostGrotesk-MediumItalic.ttf') format('truetype');
+    font-weight: 500;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Post Grotesk';
+    src: url('PostGrotesk-BookItalic.eot');
+    src: url('PostGrotesk-BookItalic.eot?#iefix') format('embedded-opentype'),
+        url('PostGrotesk-BookItalic.woff2') format('woff2'),
+        url('PostGrotesk-BookItalic.woff') format('woff'),
+        url('PostGrotesk-BookItalic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Post Grotesk';
+    src: url('PostGrotesk-Bold.eot');
+    src: url('PostGrotesk-Bold.eot?#iefix') format('embedded-opentype'),
+        url('PostGrotesk-Bold.woff2') format('woff2'),
+        url('PostGrotesk-Bold.woff') format('woff'),
+        url('PostGrotesk-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Post Grotesk';
+    src: url('PostGrotesk-BoldItalic.eot');
+    src: url('PostGrotesk-BoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('PostGrotesk-BoldItalic.woff2') format('woff2'),
+        url('PostGrotesk-BoldItalic.woff') format('woff'),
+        url('PostGrotesk-BoldItalic.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Post Grotesk';
+    src: url('PostGrotesk-Bold_1.eot');
+    src: url('PostGrotesk-Bold_1.eot?#iefix') format('embedded-opentype'),
+        url('PostGrotesk-Bold_1.woff2') format('woff2'),
+        url('PostGrotesk-Bold_1.woff') format('woff'),
+        url('PostGrotesk-Bold_1.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Post Grotesk';
+    src: url('PostGrotesk-LightItalic.eot');
+    src: url('PostGrotesk-LightItalic.eot?#iefix') format('embedded-opentype'),
+        url('PostGrotesk-LightItalic.woff2') format('woff2'),
+        url('PostGrotesk-LightItalic.woff') format('woff'),
+        url('PostGrotesk-LightItalic.ttf') format('truetype');
+    font-weight: 300;
+    font-style: italic;
+}
+
