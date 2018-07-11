@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title></title>
+		<title>app</title>
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" /> 
 		<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
 		<meta content="utf-8" http-equiv="encoding">
@@ -14,40 +14,85 @@
     <body ng-app="authApp">
 
 <header>
+	<div>
 	<img class="logo" src="images/CF_logo_RGB_NEG.svg">
+	</div>
 </header>
 
 
 
-<section>
-	<nav>
-		<div class="nav_step active">
-			<div>Step1 <br>
-			 Transaction info</div>
-		</div>
-		<div class="nav_step">
-			<div>Step2 <br>
-			 Recipient info</div>
-		</div>
-		<div class="nav_step">
-			<div>Step3 <br>
-			 Make Payment</div>
-		</div>
-	</nav>	
-	<h2>Let's set up your transaction</h2>
-	<p>Specify the amount to be sent or recievied</p>
-</section>
 
-<aside>
-	aside
-</aside>
+<div class="page"><!--
 
-<footer class="wrapper">
-		<div class="float-left">© 2018 CurrencyFair</div>
-		<div class="float-right">
-			<a href="#">Help & Support</a><a href="#">Legal Stuff</a>
-		</div>
-</footer>
+	--><div class="left_column">
+  		<section>
+			<nav>
+				<a class="active" href="#"><span>Step1</span>Transaction info</a>
+				<a href="#"><span>Step2</span>Recipient info</a>
+				<a href="#"><span>Step3</span>Make info</a>
+			</nav>
+
+			<h3>Let's set up your transaction!</h3>
+			<p>Specify the amount to be sent or recievied.</p>
+
+			<input type="text" autocapitalize="off" autocomplete="off" pattern="[0-9.]*" value="33">
+			<label class="label">You send</label>
+			<div class="button_euro">EUR</div>
+
+			<input type="text" autocapitalize="off" autocomplete="off" pattern="[0-9.]*" value="33">
+			<label class="label">Receiver gets</label>
+			<div class="button_gbp">GBP</div>
+
+			<footer class="wrapper">
+					<div class="float-left">© 2018 CurrencyFair</div>
+					<div class="float-right">
+						<a href="#">Help & Support</a><a href="#">Legal Stuff</a>
+					</div>
+			</footer>
+
+		</section>  
+	</div><!--
+
+	--><div class="right_column">		
+
+
+<dl>
+  <dt>Coffee</dt>
+  <dd>Black hot drink</dd>
+  <dt>Milk</dt>
+  <dd>White cold drink</dd>
+</dl>
+
+ 			<table>
+				<tr class="bkg-gray">
+					<td class="text-left" colspan="2">Sending details</td>
+				</tr>
+				<tr class="text-left">
+					<td class="text-left">You send</td><td>€2000</td>
+				</tr>
+				<tr>
+					<td class="text-left">Receiving details</td><td><span>As of right now ?</span></td>
+				</tr>
+				<tr>
+					<td class="text-left">Rate</td><td>0.86022</td>
+				</tr>
+				<tr>
+					<td class="text-left">Fee</td><td>£2.5</td>
+				</tr>
+				<tr>
+					<td class="text-left">Delivery date</td><td>25th November</td>
+				</tr>
+				<tr>
+					<td class="text-left">Recipient gets</td><td>£1717.94</td>
+				</tr>
+				<tr>
+					<td colspan="2">You save £66.19 compared your bank!</td>
+				</tr>
+			</table> 
+ 
+	</div><!--
+
+	--></div>
 
 
         <div class="container">
