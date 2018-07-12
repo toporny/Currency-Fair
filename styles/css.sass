@@ -1,8 +1,7 @@
-html, body, {
+html, body  {
 	margin: 0;
 	padding: 0;
 	border: 0;
-	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
     font-family: 'Post Grotesk';
@@ -11,11 +10,11 @@ html, body, {
 }
 
 div.left_column {
-    background-color: magenta;
-    //float: left;
-    //width:400px;
     text-align: left;
+    //border: 2px solid green;
     section {
+    //border: 2px solid blue;
+        
         padding-top:46px;
         nav {
             a {
@@ -36,7 +35,6 @@ div.left_column {
                 &.active {
                     color:#7eccec;
                     border-bottom:3px solid #6dc0e6;
-
                 }
             }
             display: flex;
@@ -86,16 +84,157 @@ header {
 }
 
  
+
+
+
+
+/*DL, DT, DD TAGS LIST DATA*/
+dl {
+    font-size:12px;
+    border:1px solid #CCC;
+    border-radius: 6px; 
+    width:280px;
+    margin-top: 54px;
+    margin-left: 50px;
+    
+    color:#CCC;
+    background-color: white;
+    
+     dt {
+        text-align: left;
+        padding-right:5px;
+        padding-left:15px;
+        float:left; 
+        width:100px; 
+
+
+    }
+    dd {
+        margin:0; 
+        padding-right:20px;
+        padding-left:15px;
+        &:first-child {
+            border-radius: 5px;
+ 
+        }
+        &:last-child {
+            text-align:center;
+            color:#ffc867;
+        }
+        &.color-blue {
+            color: #64b5f6;
+            &:after {
+                content: url('../images/question-mark.png');
+            }               
+         
+        }
+    }    
+
+}
+
  
 .float-left {
     float: left;
 }
+
 .float-right {
     a {
         padding-left:10px;
     }
     float: right;
 }
+
+ 
+.pad-top-15 {
+    padding-top:15px;
+}
+.pad-bot-15 {
+    padding-bottom:15px;
+}
+
+.pad-top-10 {
+    padding-top:6px;
+}
+
+.pad-bot-10 {
+    padding-bottom:6px;
+}
+
+.bold {
+    font-weight: bold;
+
+}
+.border-top {
+    border-top:2px solid #e0e0e0;
+}
+.align-left {
+    text-align:left;
+}
+.align-right {
+    text-align:right;
+}
+.gray-background {
+    background: #fafafa;
+}
+
+.color-almost-black {
+    color: #666;
+}
+
+.currency-field {
+    position: relative;
+    input {
+       font-size:26px;
+       padding-left:20px;
+       padding-top:45px;
+       padding-bottom:10px;
+       width: 490px;
+    }
+    label {
+        color: #64b5f6;
+        position: absolute;
+        top:24px;
+        left:20px;
+        font-size:13px;
+    }
+    .button_currency {
+        border:1px solid red;
+        position: absolute;
+        top:28px;
+        right:20px;
+        width:70px;
+        height: 30px;
+        border-radius:  20px 0px 0px 20px;
+        text-align: right;
+        padding-right:10px;
+        padding-top:10px;
+        font-weight: bold;
+    }
+    .button_euro:before {
+        content: url('../images/flags/ue.png');
+        padding-bottom: 10px;
+        position: absolute;
+        left: 10px;
+    }
+    
+    .button_pound:before {
+        content: url('../images/flags/gb.png');
+        padding-bottom: 10px;
+        position: absolute;
+        left: 10px;
+    }
+    
+}
+
+
+.margin-top20 {
+    margin-top:27px;
+};
+
+
+
+ 
+
 
 @media only screen and (min-width: 992px) {
     body {
@@ -112,7 +251,7 @@ header {
  
         min-height:400px;
         section {
-            width:460px;
+            width:510px;
             float:right;
             display: inline-block; 
             padding-right: 48px;

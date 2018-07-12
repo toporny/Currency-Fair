@@ -6,12 +6,12 @@
 		<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
 		<meta content="utf-8" http-equiv="encoding">
 		<meta id="viewportMeta" name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
-	  	<link href="styles/css.css" rel="stylesheet" type="text/css" />
-	  	<link href="styles/fonts/stylesheet.css" rel="stylesheet" type="text/css" />
+	 	<link href="styles/css.css" rel="stylesheet" type="text/css" />
+	 	<link href="styles/fonts/stylesheet.css" rel="stylesheet" type="text/css" />
 
 	</head>
 
-    <body ng-app="authApp">
+ <body ng-app="authApp">
 
 <header>
 	<div>
@@ -25,23 +25,27 @@
 <div class="page"><!--
 
 	--><div class="left_column">
-  		<section>
+ 		<section>
 			<nav>
 				<a class="active" href="#"><span>Step1</span>Transaction info</a>
 				<a href="#"><span>Step2</span>Recipient info</a>
-				<a href="#"><span>Step3</span>Make info</a>
+				<a href="#"><span>Step3</span>Make payment</a>
 			</nav>
 
-			<h3>Let's set up your transaction!</h3>
+			<h3 class="color-almost-black">Let's set up your transaction!</h3>
 			<p>Specify the amount to be sent or recievied.</p>
 
-			<input type="text" autocapitalize="off" autocomplete="off" pattern="[0-9.]*" value="33">
-			<label class="label">You send</label>
-			<div class="button_euro">EUR</div>
+			<div class="currency-field margin-top20">
+				<input class="currency-input" type="text" autocapitalize="off" autocomplete="off" pattern="[0-9.]*" value="33">
+				<label class="label">YOU SEND</label>
+				<div class="button_currency button_euro">EUR</div>
+			</div>
 
-			<input type="text" autocapitalize="off" autocomplete="off" pattern="[0-9.]*" value="33">
-			<label class="label">Receiver gets</label>
-			<div class="button_gbp">GBP</div>
+			<div class="currency-field">
+				<input lass="currency" type="text" autocapitalize="off" autocomplete="off" pattern="[0-9.]*" value="33">
+				<label class="label">RECEIVER GETS</label>
+				<div class="button_currency button_pound">GBP</div>
+			</div>
 
 			<footer class="wrapper">
 					<div class="float-left">© 2018 CurrencyFair</div>
@@ -50,61 +54,40 @@
 					</div>
 			</footer>
 
-		</section>  
+		</section> 
 	</div><!--
 
 	--><div class="right_column">		
 
 
+<div style="clear:both;"></div>
 <dl>
-  <dt>Coffee</dt>
-  <dd>Black hot drink</dd>
-  <dt>Milk</dt>
-  <dd>White cold drink</dd>
+	<dd class="color-almost-black align-left bold gray-background pad-top-15 pad-bot-15">Sending details</dd>
+	<dt class="border-top pad-top-15 pad-bot-15">You send</dt> <dd class="color-almost-black bold border-top align-right pad-top-15 pad-bot-15">€2000.00</dd>
+	<dt class="color-almost-black border-top bold gray-background pad-top-15 pad-bot-15">Receiving Details</dt> <dd class="border-top color-blue gray-background pad-top-15 pad-bot-15 align-right">As of right now</dd>
+	<dt class="border-top pad-top-15 pad-bot-10">Rate</dt> <dd class="bold border-top align-right pad-top-15 pad-bot-10">0.86022</dd>
+	<dt class="pad-top-10 pad-bot-10">Fee</dt> <dd class="bold align-right pad-top-10 pad-top-10 pad-bot-10">£2.50</dd>
+	<dt class="pad-top-10 pad-bot-10">Delivery date</dt> <dd class="bold align-right pad-top-10 pad-bot-10">25th November</dd>
+	<dt class="pad-top-10 pad-bot-15">Recipient gets</dt> <dd class="color-almost-black bold align-right pad-top-10 pad-bot-15">£1717.94</dd>
+	<dd class="border-top align-left text-orange pad-top-15 pad-bot-15">You save £66.19 compared your bank!</dd> 
 </dl>
 
- 			<table>
-				<tr class="bkg-gray">
-					<td class="text-left" colspan="2">Sending details</td>
-				</tr>
-				<tr class="text-left">
-					<td class="text-left">You send</td><td>€2000</td>
-				</tr>
-				<tr>
-					<td class="text-left">Receiving details</td><td><span>As of right now ?</span></td>
-				</tr>
-				<tr>
-					<td class="text-left">Rate</td><td>0.86022</td>
-				</tr>
-				<tr>
-					<td class="text-left">Fee</td><td>£2.5</td>
-				</tr>
-				<tr>
-					<td class="text-left">Delivery date</td><td>25th November</td>
-				</tr>
-				<tr>
-					<td class="text-left">Recipient gets</td><td>£1717.94</td>
-				</tr>
-				<tr>
-					<td colspan="2">You save £66.19 compared your bank!</td>
-				</tr>
-			</table> 
- 
+ 	
 	</div><!--
 
 	--></div>
 
 
-        <div class="container">
-            <div ui-view></div>
-        </div>        
+ <div class="container">
+ <div ui-view></div>
+ </div> 
 
-    </body>
-    
-<!--     <script type="text/javascript" src="./node_modules/angular/angular.js"></script>
- --><!--     <script type="text/javascript" src="./node_modules/angular-ui-router/release/angular-ui-router.js"></script>
+ </body>
+ 
+<!-- <script type="text/javascript" src="./node_modules/angular/angular.js"></script>
+ --><!-- <script type="text/javascript" src="./node_modules/angular-ui-router/release/angular-ui-router.js"></script>
  -->
-    <script type="text/javascript" src="./app/app.js"></script>
+ <script type="text/javascript" src="./app/app.js"></script>
 
 </html>
 
