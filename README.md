@@ -1,14 +1,7 @@
+## not yet ready
+(html+css responsive - done visible here: http://alltic.home.pl/3 )
 
-## How to build
+AngularJS is not yet connected:
 
-npm install
-
-and start http server with root
-
-
-## Notes
-
-/api/reports.json  - data
-
-
+(will be ready during weekend 14-15.07.2018)
 
