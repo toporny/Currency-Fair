@@ -1,1 +1,267 @@
- 
+html,
+body {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font: inherit;
+    vertical-align: baseline;
+    font-family: 'Post Grotesk';
+    background-color: #fbfbfb;
+}
+div.left_column {
+    text-align: left;
+}
+div.left_column section {
+    margin: 5%;
+    padding-top: 46px;
+}
+div.left_column section nav {
+    display: flex;
+}
+div.left_column section nav div a {
+    display: block;
+    width: 135px;
+    color: #bec9cf;
+    float: left;
+    font-size: 14px;
+    padding-bottom: 14px;
+    border-bottom: 3px solid #e2f2fa;
+    text-decoration: none;
+    font-weight: 500;
+}
+div.left_column section nav div a span {
+    display: block;
+    font-size: 12px;
+}
+div.left_column section nav div a.active {
+    color: #7eccec;
+    border-bottom: 3px solid #6dc0e6;
+}
+div.left_column section h3 {
+    margin-top: 40px;
+    font-size: 16px;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+div.left_column section p {
+    font-size: 12px;
+    font-weight: 800;
+}
+div.left_column section .footer-wrapper {
+    color: #BBB;
+    padding-top: 55px;
+    border-top: 1px solid #ededed;
+    margin-top: 10px;
+    font-size: 12px;
+}
+div.left_column section .footer-wrapper a {
+    width: 200px;
+    color: #7eccec;
+    text-decoration: none;
+}
+div.left_column section .footer-wrapper a:link,
+div.left_column section .footer-wrapper a:visited,
+div.left_column section .footer-wrapper a:active {
+    color: #7eccec;
+}
+div.left_column section .footer-wrapper a:hover {
+    color: #7eccec;
+    text-decoration: underline;
+}
+div.left_column button.next {
+    margin-top: 29px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    background-color: #7eccec;
+}
+div.left_column button.next:hover {
+    background-color: #6dc0e6;
+}
+header {
+    background-color: black;
+    height: 60px;
+    width: 100%;
+    margin-top: 3px;
+}
+header div {
+    margin: 0 auto;
+    width: 100%;
+}
+header div img.logo {
+    width: 136px;
+}
+.page {
+    text-align: center;
+    border-bottom: 3px solid black;
+}
+dl {
+    font-size: 12px;
+    border: 1px solid #CCC;
+    border-radius: 6px;
+    width: 450px;
+    margin-top: 54px;
+    margin-left: 5%;
+    margin-right: 5%;
+    color: #CCC;
+    background-color: white;
+}
+dl dt {
+    text-align: left;
+    padding-right: 5px;
+    padding-left: 15px;
+    float: left;
+    width: 100px;
+}
+dl dd {
+    margin: 0;
+    padding-right: 20px;
+    padding-left: 15px;
+}
+dl dd:first-child {
+    border-radius: 5px;
+}
+dl dd:last-child {
+    text-align: center;
+    color: #ffc867;
+}
+dl dd.color-blue {
+    color: #64b5f6;
+}
+dl dd.color-blue:after {
+    content: url("../images/question-mark.png");
+}
+.float-left {
+    float: left;
+}
+.float-right {
+    float: right;
+}
+.float-right a {
+    padding-left: 10px;
+}
+.pad-top-15 {
+    padding-top: 15px;
+}
+.pad-bot-15 {
+    padding-bottom: 15px;
+}
+.pad-top-10 {
+    padding-top: 6px;
+}
+.pad-bot-10 {
+    padding-bottom: 6px;
+}
+.bold {
+    font-weight: bold;
+}
+.border-top {
+    border-top: 2px solid #e0e0e0;
+}
+.align-left {
+    text-align: left;
+}
+.align-right {
+    text-align: right;
+}
+.gray-background {
+    background: #fafafa;
+}
+.color-almost-black {
+    color: #666;
+}
+.currency-field {
+    position: relative;
+}
+.currency-field input {
+    font-size: 26px;
+    padding: 45px 5% 10px;
+    width: 90%;
+}
+.currency-field input:focus {
+    background-color: #fafdfe;
+}
+.currency-field input:focus + label {
+    color: #64b5f6;
+}
+.currency-field label {
+    color: #888;
+    position: absolute;
+    top: 24px;
+    left: 5%;
+    font-size: 13px;
+}
+.currency-field .button_currency {
+    border: 1px solid #e0e0e0;
+    position: absolute;
+    top: 28px;
+    right: 20px;
+    width: 76px;
+    height: 30px;
+    border-radius: 20px 0 0 20px;
+    text-align: right;
+    padding-right: 10px;
+    padding-top: 10px;
+    font-weight: bold;
+}
+.currency-field .button_euro:before {
+    content: url("../images/flags/ue.png");
+    padding-bottom: 10px;
+    position: absolute;
+    left: 10px;
+}
+.currency-field .button_pound:before {
+    content: url("../images/flags/gb.png");
+    padding-bottom: 10px;
+    position: absolute;
+    left: 10px;
+}
+.margin-top20 {
+    margin-top: 27px;
+}
+@media only screen and (min-width: 992px) {
+    div.left_column {
+        background-color: white;
+        width: 50%;
+        display: inline-block;
+        margin: 0;
+        padding: 0;
+        border-right: 1px solid green;
+        box-sizing: border-box;
+        min-height: 400px;
+    }
+    div.left_column section {
+        float: right;
+        display: inline-block;
+        padding-right: 48px;
+    }
+    div.left_column section nav div a {
+        width: 133px;
+    }
+    div.right_column {
+        margin: 0;
+        padding: 0;
+        width: 50%;
+        display: inline-block;
+        vertical-align: top;
+    }
+    div.right_column table {
+        margin-top: 50px;
+        height: 340px;
+        margin-left: 70px;
+        border: 1px solid #e0e0e0;
+        margin-right: 5px;
+        border-radius: 5px;
+    }
+    div.right_column table tr.bkg-gray {
+        background-color: #e0e0e0;
+    }
+    div.right_column table tr.bkg-gray td.text-left {
+        text-align: left;
+    }
+}
