@@ -49,9 +49,9 @@ div.left_column section p {
 }
 div.left_column section .footer-wrapper {
     color: #BBB;
-    padding-top: 55px;
+    padding-top: 9px;
     border-top: 1px solid #ededed;
-    margin-top: 10px;
+    margin-top: 20px;
     font-size: 12px;
 }
 div.left_column section .footer-wrapper a {
@@ -104,7 +104,7 @@ dl {
     font-size: 12px;
     border: 1px solid #CCC;
     border-radius: 6px;
-    width: 450px;
+    width: auto;
     margin-top: 54px;
     margin-left: 5%;
     margin-right: 5%;
@@ -233,7 +233,9 @@ dl dd.color-blue:after {
         padding: 0;
         border-right: 1px solid green;
         box-sizing: border-box;
-        min-height: 400px;
+    }
+    div.left_column .footer-wrapper {
+        margin-top: 50px !important;
     }
     div.left_column section {
         float: right;
@@ -250,18 +252,7 @@ dl dd.color-blue:after {
         display: inline-block;
         vertical-align: top;
     }
-    div.right_column table {
-        margin-top: 50px;
-        height: 340px;
-        margin-left: 70px;
-        border: 1px solid #e0e0e0;
-        margin-right: 5px;
-        border-radius: 5px;
-    }
-    div.right_column table tr.bkg-gray {
-        background-color: #e0e0e0;
-    }
-    div.right_column table tr.bkg-gray td.text-left {
-        text-align: left;
+    div.right_column dl {
+        width: 450px;
     }
 }
