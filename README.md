@@ -28,7 +28,7 @@ and
 https://github.com/webextensions/live-css-editor
 
 ### Problems appeared:
-- desktop view wasn't provided - I had to implement "my own view".
+- mobile view wasn't provided - I had to implement "my own view".
 - colors table wasn't provided - I had to use color picker which wasn't inaccurate especially on text (that's why SASS file has so many color definitions.
 
 ### To do in future
