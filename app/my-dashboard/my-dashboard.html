@@ -16,19 +16,19 @@
       <p>Specify the amount to be sent or recievied.</p>
 
       <div class="currency-field margin-top30">
-        <input class="currency-input" ng-model="reportListing.first_value" ng-focus="reportListing.focus(1)" ng-blur="reportListing.blur(1)" type="text" autocapitalize="off" autocomplete="off" pattern="[0-9.]*">
+        <input class="currency-input" ng-model="myDashboard.first_value" ng-focus="myDashboard.focus(1)" ng-blur="myDashboard.blur(1)" type="text" autocapitalize="off" autocomplete="off" pattern="[0-9.]*">
         <label class="label1">YOU SEND</label>
-        <div class="button_currency button_euro" ng-click="reportListing.action()">EUR</div>
+        <div class="button_currency button_euro" ng-click="myDashboard.action()">EUR</div>
       </div>
 
       <div class="currency-field">
-        <input lass="currency" type="text" ng-model="reportListing.second_value" ng-focus="reportListing.focus(2)" ng-blur="reportListing.blur(2)" ngBlurautocapitalize="off" autocomplete="off" pattern="[0-9.]*">
+        <input lass="currency" type="text" ng-model="myDashboard.second_value" ng-focus="myDashboard.focus(2)" ng-blur="myDashboard.blur(2)" ngBlurautocapitalize="off" autocomplete="off" pattern="[0-9.]*">
         <label class="label2">RECEIVER GETS</label>
-        <div class="button_currency button_pound" ng-click="reportListing.action()">GBP</div>
+        <div class="button_currency button_pound" ng-click="myDashboard.action()">GBP</div>
       </div>
 
 
-      <button class="next" ng-click="reportListing.showModal()">Next</button>
+      <button class="next" ng-click="myDashboard.showModal()">Next</button>
 
       <div class="footer-wrapper">
           <div class="float-left">© 2018 CurrencyFair</div>
@@ -64,7 +64,7 @@
 
 
 
-<div class="modal" ng-show="reportListing.modalVisibility" >
+<div class="modal" ng-show="myDashboard.modalVisibility" >
   <div class="modal-content">
 
 
@@ -82,8 +82,8 @@
       <input type="text" name="digit5" maxlength="1">
       <input type="text" name="digit6" maxlength="1">
       <div class="link-area">
-        <a href="#" ng-click="reportListing.action()" class="float-left icon-refresh">Receive a new code</a>
-        <a href="#" ng-click="reportListing.action()" class="float-right icon-phone">Receive code via call instead</a>
+        <a href="#" ng-click="myDashboard.action()" class="float-left icon-refresh">Receive a new code</a>
+        <a href="#" ng-click="myDashboard.action()" class="float-right icon-phone">Receive code via call instead</a>
       </div>
 
     </div>
@@ -91,9 +91,9 @@
 
 
   <div class="button-area">
-    <button class="next" ng-click="reportListing.action()">Verify identity</button>
-    <button class="back" ng-click="reportListing.closeModal()">Back</button>
-    <a class="float-right" href="#" ng-click="reportListing.action()" >I can't access to this mobile device.</a>
+    <button class="next" ng-click="myDashboard.action()">Verify identity</button>
+    <button class="back" ng-click="myDashboard.closeModal()">Back</button>
+    <a class="float-right" href="#" ng-click="myDashboard.action()" >I can't access to this mobile device.</a>
   </div>
 
 

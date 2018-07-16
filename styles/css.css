@@ -84,14 +84,17 @@ div.left_column section {
 div.left_column section nav {
     display: flex;
 }
+div.left_column section nav div {
+    width: 100%;
+}
 div.left_column section nav div a {
     display: block;
-    width: 123px;
+    width: 100%;
     color: #bec9cf;
     float: left;
     font-size: 14px;
-    text-align: center;
-    padding-bottom: 14px;
+    text-align: left;
+    padding-top: 10px;
     border-bottom: 3px solid #e2f2fa;
     text-decoration: none;
     font-weight: 500;
@@ -99,7 +102,6 @@ div.left_column section nav div a {
 div.left_column section nav div a span {
     display: block;
     font-size: 12px;
-    padding-right: 55px;
 }
 div.left_column section nav div a.active {
     color: #7eccec;
@@ -107,12 +109,6 @@ div.left_column section nav div a.active {
 }
 div.left_column section nav div a:hover {
     color: #6dc0e6;
-}
-div.left_column section nav div a:nth-of-type(1) > span {
-    padding-right: 65px;
-}
-div.left_column section nav div a:last-of-type > span {
-    padding-right: 60px;
 }
 div.left_column section h3 {
     margin-top: 40px;
@@ -290,10 +286,17 @@ dl dd.color-blue:after {
     div.left_column section nav div a span {
         display: block;
         font-size: 12px;
+        padding-right: 55px;
     }
     div.left_column section nav div a.active {
         color: #7eccec;
         border-bottom: 3px solid #6dc0e6;
+    }
+    div.left_column section nav div a:nth-of-type(1) > span {
+        padding-right: 65px;
+    }
+    div.left_column section nav div a:last-of-type > span {
+        padding-right: 60px;
     }
     div.right_column {
         margin-left: 0;
@@ -351,7 +354,7 @@ dl dd.color-blue:after {
 .modal .modal-content .center-part p {
     color: #000000;
     font-size: 18px;
-    line-height: 22px;
+    line-height: 28px;
 }
 .modal .modal-content .center-part p span {
     color: #888888;

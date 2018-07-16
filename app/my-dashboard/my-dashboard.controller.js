@@ -4,12 +4,12 @@
 
     angular
         .module('authApp')
-        .controller('ReportListingController', ReportListingController); 
+        .controller('myDashboardController', myDashboardController); 
  
-    ReportListingController.$inject = []; 
+    myDashboardController.$inject = []; 
 
 
-    function ReportListingController() {  
+    function myDashboardController() {  
 
         var vm = this;
         vm.showModal = showModal;
@@ -22,7 +22,7 @@
         vm.focus = focus;
         vm.blur = blur;
 
-        vm.modalVisibility = true; 
+        vm.modalVisibility = false; 
 
         function showModal() {
           vm.modalVisibility = true; 
