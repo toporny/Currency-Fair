@@ -1,0 +1,538 @@
+$c_C1: #000000;
+$c_C2: #888888;
+$c_C3: #bec9cf;
+$c_C4: #7eccec;
+$c_C5: #fbfbfb;
+$c_C6: #e0e0e0;
+$c_C7: #666666;
+$c_C8: #BBBBBB;
+$c_C9: #e2f2fa;
+$c_CA: #6dc0e6;
+$c_CB: #ededed;
+
+// MAIN DEFINITIONS
+
+html, body  {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font: inherit;
+    vertical-align: baseline;
+    font-family: 'Post Grotesk';
+    background-color: $c_C5;
+}
+
+.page {
+    text-align: center;
+    border-bottom:3px solid black;
+}
+
+
+header {
+    background-color: black;
+    height: 60px;
+    width: 100%;
+    margin-top:3px;
+ 
+    div {
+        margin: 0px auto;
+        width: 100%;
+        img.logo {
+            margin-left: 10px;
+            width: 136px;
+        }
+        
+    }
+}
+
+.margin-top30 {
+    margin-top:30px;
+};
+ 
+.float-left {
+    float: left;
+}
+.float-right {
+    a {
+        padding-left:10px;
+    }
+    float: right;
+}
+.pad-top-20 {
+    padding-top:20px;
+}
+
+.pad-bot-20 {
+    padding-bottom:20px;
+}
+.pad-top-15 {
+    padding-top:15px;
+}
+.pad-bot-15 {
+    padding-bottom:15px;
+}
+.pad-top-10 {
+    padding-top:10px;
+}
+.pad-bot-10 {
+    padding-bottom:10px;
+}
+.bold {
+    font-weight: bold;
+}
+.border-top {
+    border-top:2px solid $c_C6;
+}
+.align-left {
+    text-align:left;
+}
+.align-right {
+    text-align:right;
+}
+.gray-background {
+    background: $c_C5;
+}
+
+.color-almost-black {
+    color: $c_C7;
+}
+
+
+
+
+// LEFT AND RIGHT COLUMN DEFINITIONS
+
+div.left_column { // LEFT COLUMN
+    text-align: left;
+    section {
+        margin: 10px 5% 5% 5%;
+        padding-top:46px;
+        nav {
+            div {
+                a {
+                    display: block;
+                    width: 123px;
+                    color: $c_C3;
+                    float:left;
+                    font-size:14px;
+                    text-align: center;
+                    span {
+                        display: block;
+                        font-size:12px;
+                        padding-right: 55px;
+                    }
+                    
+                    padding-bottom: 14px; 
+                    border-bottom:3px solid $c_C9;
+                    text-decoration:none;
+                    font-weight:500;
+                    &.active {
+                        color:$c_C4;
+                        border-bottom:3px solid $c_CA;
+                    }
+                    &:hover {
+                        color:$c_CA;
+                    }
+                }
+                a:nth-of-type(1) > span {
+                    padding-right: 65px;
+                }
+                a:last-of-type > span {
+                    padding-right: 60px;
+                }
+            }
+            display: flex;
+        }
+        h3 {
+            margin-top: 40px;
+            font-size:16px;
+            margin-bottom: 0px;
+            padding-bottom: 0px;
+        }
+        p {
+            font-size:12px;
+            font-weight: 800;
+        }
+        
+        .footer-wrapper {
+            color:$c_C8;
+            padding-top:9px;
+            border-top: 1px solid $c_CB;
+            margin-top:20px;
+            font-size: 12px;
+            a {
+                width:200px;
+                color:$c_C4;
+                text-decoration:none;
+                &:link, &:visited, &:active {
+                    color:$c_C4;
+                } 
+                &:hover {
+                    color: $c_C4;
+                     text-decoration:underline;
+                }
+            }
+        }
+        
+
+        .currency-field {
+            position: relative;
+            input {
+               font-size:26px;
+               padding-left:5%;
+               padding-right:5%;
+               padding-top:52px;
+               padding-bottom:10px;
+               width: 90%;
+               &:focus {
+                  background-color: #fafdfe;
+               }
+               &:focus + label {
+                  color:#64b5f6;
+               }               
+            }
+            
+            label {
+                color: $c_C2;
+                position: absolute;
+                top:24px;
+                left:5%;
+                font-size:13px;
+            }
+
+            .button_currency {
+                border:1px solid $c_C6;
+                position: absolute;
+                top:28px;
+                right:20px;
+                width:76px;
+                height: 30px;
+                border-radius:  20px 0px 0px 20px;
+                text-align: right;
+                padding-right:10px;
+                padding-top:10px;
+                font-weight: bold;
+                &:hover {
+                    background-color: $c_C5;
+                    cursor: pointer;
+                }
+            }
+
+            .button_euro:before {
+                content: url('../images/flags/ue.png');
+                padding-bottom: 10px;
+                position: absolute;
+                left: 10px;
+            }
+
+            .button_pound:before {
+                content: url('../images/flags/gb.png');
+                padding-bottom: 10px;
+                position: absolute;
+                left: 10px;
+            }
+
+        }
+        
+    }
+    
+    button.next {
+        margin-top:40px;
+        border: none;
+        border-radius:5px;
+        color: white;
+        padding: 15px 15px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        background-color: $c_C4;
+        width: 70px;
+    }
+    button.next:hover {
+         background-color: $c_CA;
+    }
+}
+
+
+
+/*DL, DT, DD TAGS LIST DATA*/
+dl {
+    font-size:12px;
+    border:1px solid #CCC;
+    border-radius: 6px; 
+    width:auto;
+    margin-top: 54px;
+    margin-left: 5%;
+    margin-right: 5%;
+    
+    color:#CCC;
+    background-color: white;
+    
+     dt {
+        text-align: left;
+        padding-right:5px;
+        padding-left:15px;
+        float:left; 
+        width:100px; 
+
+
+    }
+    dd {
+        margin:0; 
+        padding-right:20px;
+        padding-left:15px;
+        &:first-child {
+            border-radius: 5px;
+ 
+        }
+        &:last-child {
+            text-align:center;
+            color:#ffc867;
+        }
+        &.color-blue {
+            color: #64b5f6;
+            &:after {
+                content: url('/styles/images/question-mark.png');
+            }               
+         
+        }
+    }    
+}
+
+
+
+
+
+ 
+
+
+@media only screen and (min-width: 992px) {
+    header { 
+      div {
+         img.logo {
+          margin-left: 15%;
+          width: 136px;
+        }
+      }
+    }
+    
+    div.left_column{
+        background-color: white;
+        width: 48%;
+        display:inline-block;
+        margin:0;
+        padding: 0;
+        box-sizing: border-box;
+        border-right: 1px solid $c_C3;
+
+        .footer-wrapper {
+            margin-top:65px !important;
+         }
+
+        //min-height:400px;
+        section {
+            //border: 1px solid blue;
+            width:82%;
+            float:right;
+            display: inline-block; 
+            padding-right: 20px;
+         
+          nav {
+            div {
+                width:100%;
+                a {
+                    display: block;
+                    //padding-left: 50px;
+                    color: $c_C3;
+                    float:left;
+                    width: 33%;
+                    font-size:14px;
+                    span {
+                        display: block;
+                        font-size:12px;
+                    }
+                    padding-bottom: 14px; 
+                    border-bottom:3px solid $c_C9;
+                    text-decoration:none;
+                    font-weight:500;
+                    &.active {
+                        color:$c_C4;
+                        border-bottom:3px solid $c_CA;
+                    }
+                }
+            }
+            display: flex;
+          }
+        }
+    } 
+
+    div.right_column {
+        margin-left:0px;
+        padding: 0;
+        dl {
+            margin-left: 60px;
+            width:310px;
+        }
+        width: 30%;
+        display:inline-block;
+        vertical-align:top;
+
+    }
+}
+
+
+
+// MODAL DEFINITIONS
+
+.modal {
+    
+    //display: none; /* Hidden by default */
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: $c_C1;
+    background-color: rgba(0,0,0,0.7);
+
+    
+    .modal-content {
+       background-color: #fefefe;
+       margin: 6% auto;
+       padding: 12px 30px 30px 30px;
+       border: 1px solid $c_C2;
+       border-radius: 5px;
+       max-width: 520px;
+
+        h1 {
+            text-align: left;
+            color: $c_C2;
+            font-size:18px;
+            margin-bottom: 17px;
+        }
+        p {
+            color: $c_C2;
+            font-size:15px;
+        }
+        h1:before {
+            top: 5px;
+            margin-right:5px;
+            position:relative;
+            top: 2px;
+            content:url('/styles/modal-css-images/lock-icon.png');
+        }
+       .center-part {
+           text-align: center;
+           padding-top:40px;
+           padding-bottom:20px;
+           p {
+             color:  $c_C1;  
+             font-size:18px;
+             line-height: 22px;
+             span {
+               color: $c_C2;
+               padding:5px;
+               &.prefix {
+                 border: 1px solid $c_CB;
+                 background-color: #f2f1f1;
+               }
+               &.number {
+                 border-top: 1px solid $c_CB;
+                 border-right: 1px solid $c_CB;
+                 border-bottom: 1px solid $c_CB;
+                 background-color: #f7f7f7;
+               }
+             }
+           }
+        }
+        
+       input {
+           width:33px;
+           height:40px;
+           font-size:30px;
+           padding:8px;
+           margin:12px 6px 6px 6px;
+           text-align: center;
+           border-radius: 5px;
+           border: 1px solid $c_C3;
+       }
+       
+       .link-area {
+           margin: 10px auto;
+           max-width: 385px;
+           display: block;
+           height: 40px;
+            a {
+                font-size:12px;
+                color:$c_C4;
+                text-decoration:none;
+                &:link, &:visited, &:active {
+                    color:$c_C4;
+                } 
+                &:hover {
+                    color: $c_C4;
+                     text-decoration:underline;
+                }
+           }           
+           a.icon-refresh:before {
+             top: 5px;
+             margin-right:5px;
+             position:relative;
+             top: 4px;
+             content:url('/styles/modal-css-images/refresh-icon.png');
+           }
+           a.icon-phone:before {
+             margin-right:5px;
+             position:relative; /*or absolute*/
+             top: 4px;
+             content:url('/styles/modal-css-images/phone-icon.png');
+           }
+       }
+
+        .button-area {
+            margin-top:29px;
+            a {
+                margin-top: 13px;
+                font-size:12px;
+                color:$c_C4;
+                text-decoration:none;
+                &:link, &:visited, &:active {
+                    color:$c_C4;
+                } 
+                &:hover {
+                    color: $c_C4;
+                     text-decoration:underline;
+                }
+            }
+                        
+            
+           button {
+             border: none;
+             border-radius: 5px;
+             color: white;
+             padding: 10px;
+             text-align: center;
+             text-decoration: none;
+             display: inlinre-block;
+             font-size: 16px;
+             &.next {
+                background-color: $c_C4;
+                &:hover {
+                    background-color: $c_CA;
+                }
+             }
+             &.back {
+                background-color: $c_C3;
+                &:hover {
+                    background-color: $c_C6;
+                }
+             }
+           }    
+        }
+       
+    }
+
+}

@@ -1,0 +1,104 @@
+
+
+<div class="page"><!--
+
+  --><div class="left_column">
+    <section>
+      <nav>
+        <div>
+          <a class="active" href="#"><span>Step1</span>Transaction info</a>
+          <a href="#"><span>Step2</span>Recipient info</a>
+          <a href="#"><span>Step3</span>Make payment</a>
+        </div>
+      </nav>
+
+      <h3 class="color-almost-black">Let's set up your transaction!</h3>
+      <p>Specify the amount to be sent or recievied.</p>
+
+      <div class="currency-field margin-top30">
+        <input class="currency-input" ng-model="reportListing.first_value" ng-focus="reportListing.focus(1)" ng-blur="reportListing.blur(1)" type="text" autocapitalize="off" autocomplete="off" pattern="[0-9.]*">
+        <label class="label1">YOU SEND</label>
+        <div class="button_currency button_euro" ng-click="reportListing.action()">EUR</div>
+      </div>
+
+      <div class="currency-field">
+        <input lass="currency" type="text" ng-model="reportListing.second_value" ng-focus="reportListing.focus(2)" ng-blur="reportListing.blur(2)" ngBlurautocapitalize="off" autocomplete="off" pattern="[0-9.]*">
+        <label class="label2">RECEIVER GETS</label>
+        <div class="button_currency button_pound" ng-click="reportListing.action()">GBP</div>
+      </div>
+
+
+      <button class="next" ng-click="reportListing.showModal()">Next</button>
+
+      <div class="footer-wrapper">
+          <div class="float-left">© 2018 CurrencyFair</div>
+          <div class="float-right">
+            <a href="#">Help & Support</a><a href="#">Legal Stuff</a>
+          </div>
+      </div>
+
+    </section> 
+  </div><!--
+
+  --><div class="right_column">   
+
+
+      <div style="clear:both;"></div>
+      <dl>
+        <dd class="color-almost-black align-left bold gray-background pad-top-20 pad-bot-15">Sending details</dd>
+        <dt class="border-top pad-top-15 pad-bot-20">You send</dt> <dd class="color-almost-black bold border-top align-right pad-top-15 pad-bot-20">€2000.00</dd>
+        <dt class="color-almost-black border-top bold gray-background pad-top-15 pad-bot-20">Receiving Details</dt> <dd class="border-top color-blue gray-background pad-top-15 pad-bot-20 align-right">As of right now</dd>
+        <dt class="border-top pad-top-10 pad-bot-10">Rate</dt> <dd class="bold border-top align-right pad-top-10 pad-bot-10">0.86022</dd>
+        <dt class="pad-top-10 pad-bot-10">Fee</dt> <dd class="bold align-right pad-top-10 pad-top-10 pad-bot-10">£2.50</dd>
+        <dt class="pad-top-10 pad-bot-10">Delivery date</dt> <dd class="bold align-right pad-top-10 pad-bot-10">25th November</dd>
+        <dt class="pad-top-10 pad-bot-15">Recipient gets</dt> <dd class="color-almost-black bold align-right pad-top-10 pad-bot-15">£1717.94</dd>
+        <dd class="border-top align-left text-orange pad-top-15 pad-bot-15">You save £66.19 compared your bank!</dd> 
+      </dl>
+
+  
+  </div><!--
+
+  --></div>
+
+
+
+
+
+<div class="modal" ng-show="reportListing.modalVisibility" >
+  <div class="modal-content">
+
+
+  <h1 class="lock">Identify verification required</h1>
+  <p>For your security, we occasionally require you to verify your identity by entering a code sent to your mobile device.</p>
+ 
+  <div class="gray-background center-part">
+    <p>Enter the code via SMS to <span class="prefix">+353</span><span class="number">872251177</span></p>
+
+    <div class="digits">
+      <input type="text" name="digit1" maxlength="1">
+      <input type="text" name="digit2" maxlength="1">
+      <input type="text" name="digit3" maxlength="1">
+      <input type="text" name="digit4" maxlength="1">
+      <input type="text" name="digit5" maxlength="1">
+      <input type="text" name="digit6" maxlength="1">
+      <div class="link-area">
+        <a href="#" ng-click="reportListing.action()" class="float-left icon-refresh">Receive a new code</a>
+        <a href="#" ng-click="reportListing.action()" class="float-right icon-phone">Receive code via call instead</a>
+      </div>
+
+    </div>
+  </div>  
+
+
+  <div class="button-area">
+    <button class="next" ng-click="reportListing.action()">Verify identity</button>
+    <button class="back" ng-click="reportListing.closeModal()">Back</button>
+    <a class="float-right" href="#" ng-click="reportListing.action()" >I can't access to this mobile device.</a>
+  </div>
+
+
+  </div>
+
+</div>
+
+

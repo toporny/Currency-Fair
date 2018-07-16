@@ -1,0 +1,452 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font: inherit;
+    vertical-align: baseline;
+    font-family: 'Post Grotesk';
+    background-color: #fbfbfb;
+}
+.page {
+    text-align: center;
+    border-bottom: 3px solid black;
+}
+header {
+    background-color: black;
+    height: 60px;
+    width: 100%;
+    margin-top: 3px;
+}
+header div {
+    margin: 0 auto;
+    width: 100%;
+}
+header div img.logo {
+    margin-left: 10px;
+    width: 136px;
+}
+.margin-top30 {
+    margin-top: 30px;
+}
+.float-left {
+    float: left;
+}
+.float-right {
+    float: right;
+}
+.float-right a {
+    padding-left: 10px;
+}
+.pad-top-20 {
+    padding-top: 20px;
+}
+.pad-bot-20 {
+    padding-bottom: 20px;
+}
+.pad-top-15 {
+    padding-top: 15px;
+}
+.pad-bot-15 {
+    padding-bottom: 15px;
+}
+.pad-top-10 {
+    padding-top: 10px;
+}
+.pad-bot-10 {
+    padding-bottom: 10px;
+}
+.bold {
+    font-weight: bold;
+}
+.border-top {
+    border-top: 2px solid #e0e0e0;
+}
+.align-left {
+    text-align: left;
+}
+.align-right {
+    text-align: right;
+}
+.gray-background {
+    background: #fbfbfb;
+}
+.color-almost-black {
+    color: #666666;
+}
+div.left_column {
+    text-align: left;
+}
+div.left_column section {
+    margin: 10px 5% 5%;
+    padding-top: 46px;
+}
+div.left_column section nav {
+    display: flex;
+}
+div.left_column section nav div a {
+    display: block;
+    width: 123px;
+    color: #bec9cf;
+    float: left;
+    font-size: 14px;
+    text-align: center;
+    padding-bottom: 14px;
+    border-bottom: 3px solid #e2f2fa;
+    text-decoration: none;
+    font-weight: 500;
+}
+div.left_column section nav div a span {
+    display: block;
+    font-size: 12px;
+    padding-right: 55px;
+}
+div.left_column section nav div a.active {
+    color: #7eccec;
+    border-bottom: 3px solid #6dc0e6;
+}
+div.left_column section nav div a:hover {
+    color: #6dc0e6;
+}
+div.left_column section nav div a:nth-of-type(1) > span {
+    padding-right: 65px;
+}
+div.left_column section nav div a:last-of-type > span {
+    padding-right: 60px;
+}
+div.left_column section h3 {
+    margin-top: 40px;
+    font-size: 16px;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+div.left_column section p {
+    font-size: 12px;
+    font-weight: 800;
+}
+div.left_column section .footer-wrapper {
+    color: #BBBBBB;
+    padding-top: 9px;
+    border-top: 1px solid #ededed;
+    margin-top: 20px;
+    font-size: 12px;
+}
+div.left_column section .footer-wrapper a {
+    width: 200px;
+    color: #7eccec;
+    text-decoration: none;
+}
+div.left_column section .footer-wrapper a:link,
+div.left_column section .footer-wrapper a:visited,
+div.left_column section .footer-wrapper a:active {
+    color: #7eccec;
+}
+div.left_column section .footer-wrapper a:hover {
+    color: #7eccec;
+    text-decoration: underline;
+}
+div.left_column section .currency-field {
+    position: relative;
+}
+div.left_column section .currency-field input {
+    font-size: 26px;
+    padding: 52px 5% 10px;
+    width: 90%;
+}
+div.left_column section .currency-field input:focus {
+    background-color: #fafdfe;
+}
+div.left_column section .currency-field input:focus + label {
+    color: #64b5f6;
+}
+div.left_column section .currency-field label {
+    color: #888888;
+    position: absolute;
+    top: 24px;
+    left: 5%;
+    font-size: 13px;
+}
+div.left_column section .currency-field .button_currency {
+    border: 1px solid #e0e0e0;
+    position: absolute;
+    top: 28px;
+    right: 20px;
+    width: 76px;
+    height: 30px;
+    border-radius: 20px 0 0 20px;
+    text-align: right;
+    padding-right: 10px;
+    padding-top: 10px;
+    font-weight: bold;
+}
+div.left_column section .currency-field .button_currency:hover {
+    background-color: #fbfbfb;
+    cursor: pointer;
+}
+div.left_column section .currency-field .button_euro:before {
+    content: url("../images/flags/ue.png");
+    padding-bottom: 10px;
+    position: absolute;
+    left: 10px;
+}
+div.left_column section .currency-field .button_pound:before {
+    content: url("../images/flags/gb.png");
+    padding-bottom: 10px;
+    position: absolute;
+    left: 10px;
+}
+div.left_column button.next {
+    margin-top: 40px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    background-color: #7eccec;
+    width: 70px;
+}
+div.left_column button.next:hover {
+    background-color: #6dc0e6;
+}
+dl {
+    font-size: 12px;
+    border: 1px solid #CCC;
+    border-radius: 6px;
+    width: auto;
+    margin-top: 54px;
+    margin-left: 5%;
+    margin-right: 5%;
+    color: #CCC;
+    background-color: white;
+}
+dl dt {
+    text-align: left;
+    padding-right: 5px;
+    padding-left: 15px;
+    float: left;
+    width: 100px;
+}
+dl dd {
+    margin: 0;
+    padding-right: 20px;
+    padding-left: 15px;
+}
+dl dd:first-child {
+    border-radius: 5px;
+}
+dl dd:last-child {
+    text-align: center;
+    color: #ffc867;
+}
+dl dd.color-blue {
+    color: #64b5f6;
+}
+dl dd.color-blue:after {
+    content: url("/styles/images/question-mark.png");
+}
+@media only screen and (min-width: 992px) {
+    header div img.logo {
+        margin-left: 15%;
+        width: 136px;
+    }
+    div.left_column {
+        background-color: white;
+        width: 48%;
+        display: inline-block;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        border-right: 1px solid #bec9cf;
+    }
+    div.left_column .footer-wrapper {
+        margin-top: 65px !important;
+    }
+    div.left_column section {
+        width: 82%;
+        float: right;
+        display: inline-block;
+        padding-right: 20px;
+    }
+    div.left_column section nav {
+        display: flex;
+    }
+    div.left_column section nav div {
+        width: 100%;
+    }
+    div.left_column section nav div a {
+        display: block;
+        color: #bec9cf;
+        float: left;
+        width: 33%;
+        font-size: 14px;
+        padding-bottom: 14px;
+        border-bottom: 3px solid #e2f2fa;
+        text-decoration: none;
+        font-weight: 500;
+    }
+    div.left_column section nav div a span {
+        display: block;
+        font-size: 12px;
+    }
+    div.left_column section nav div a.active {
+        color: #7eccec;
+        border-bottom: 3px solid #6dc0e6;
+    }
+    div.right_column {
+        margin-left: 0;
+        padding: 0;
+        width: 30%;
+        display: inline-block;
+        vertical-align: top;
+    }
+    div.right_column dl {
+        margin-left: 60px;
+        width: 310px;
+    }
+}
+.modal {
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: #000000;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+.modal .modal-content {
+    background-color: #fefefe;
+    margin: 6% auto;
+    padding: 12px 30px 30px;
+    border: 1px solid #888888;
+    border-radius: 5px;
+    max-width: 520px;
+}
+.modal .modal-content h1 {
+    text-align: left;
+    color: #888888;
+    font-size: 18px;
+    margin-bottom: 17px;
+}
+.modal .modal-content p {
+    color: #888888;
+    font-size: 15px;
+}
+.modal .modal-content h1:before {
+    top: 5px;
+    margin-right: 5px;
+    position: relative;
+    top: 2px;
+    content: url("/styles/modal-css-images/lock-icon.png");
+}
+.modal .modal-content .center-part {
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 20px;
+}
+.modal .modal-content .center-part p {
+    color: #000000;
+    font-size: 18px;
+    line-height: 22px;
+}
+.modal .modal-content .center-part p span {
+    color: #888888;
+    padding: 5px;
+}
+.modal .modal-content .center-part p span.prefix {
+    border: 1px solid #ededed;
+    background-color: #f2f1f1;
+}
+.modal .modal-content .center-part p span.number {
+    border-top: 1px solid #ededed;
+    border-right: 1px solid #ededed;
+    border-bottom: 1px solid #ededed;
+    background-color: #f7f7f7;
+}
+.modal .modal-content input {
+    width: 33px;
+    height: 40px;
+    font-size: 30px;
+    padding: 8px;
+    margin: 12px 6px 6px;
+    text-align: center;
+    border-radius: 5px;
+    border: 1px solid #bec9cf;
+}
+.modal .modal-content .link-area {
+    margin: 10px auto;
+    max-width: 385px;
+    display: block;
+    height: 40px;
+}
+.modal .modal-content .link-area a {
+    font-size: 12px;
+    color: #7eccec;
+    text-decoration: none;
+}
+.modal .modal-content .link-area a:link,
+.modal .modal-content .link-area a:visited,
+.modal .modal-content .link-area a:active {
+    color: #7eccec;
+}
+.modal .modal-content .link-area a:hover {
+    color: #7eccec;
+    text-decoration: underline;
+}
+.modal .modal-content .link-area a.icon-refresh:before {
+    top: 5px;
+    margin-right: 5px;
+    position: relative;
+    top: 4px;
+    content: url("/styles/modal-css-images/refresh-icon.png");
+}
+.modal .modal-content .link-area a.icon-phone:before {
+    margin-right: 5px;
+    position: relative;
+    top: 4px;
+    content: url("/styles/modal-css-images/phone-icon.png");
+}
+.modal .modal-content .button-area {
+    margin-top: 29px;
+}
+.modal .modal-content .button-area a {
+    margin-top: 13px;
+    font-size: 12px;
+    color: #7eccec;
+    text-decoration: none;
+}
+.modal .modal-content .button-area a:link,
+.modal .modal-content .button-area a:visited,
+.modal .modal-content .button-area a:active {
+    color: #7eccec;
+}
+.modal .modal-content .button-area a:hover {
+    color: #7eccec;
+    text-decoration: underline;
+}
+.modal .modal-content .button-area button {
+    border: none;
+    border-radius: 5px;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inlinre-block;
+    font-size: 16px;
+}
+.modal .modal-content .button-area button.next {
+    background-color: #7eccec;
+}
+.modal .modal-content .button-area button.next:hover {
+    background-color: #6dc0e6;
+}
+.modal .modal-content .button-area button.back {
+    background-color: #bec9cf;
+}
+.modal .modal-content .button-area button.back:hover {
+    background-color: #e0e0e0;
+}

@@ -13,123 +13,27 @@
 
  <body ng-app="authApp">
 
-<header>
-	<div>
-	<img class="logo" src="images/CF_logo_RGB_NEG.svg">
-	</div>
-</header>
+        
+	<header>
+		<div>
+		<img class="logo" src="images/CF_logo_RGB_NEG.svg">
+		</div>
+	</header>
 
 
-
-
-<div class="page"><!--
-
-	--><div class="left_column">
- 		<section>
-			<nav>
-	 			<div>
-					<a class="active" href="#"><span>Step1</span>Transaction info</a>
-					<a href="#"><span>Step2</span>Recipient info</a>
-					<a href="#"><span>Step3</span>Make payment</a>
-	 			</div>
-			</nav>
-
-			<h3 class="color-almost-black">Let's set up your transaction!</h3>
-			<p>Specify the amount to be sent or recievied.</p>
-
-			<div class="currency-field margin-top20">
-				<input class="currency-input" type="text" autocapitalize="off" autocomplete="off" pattern="[0-9.]*" value="33">
-				<label class="label1">YOU SEND</label>
-				<div class="button_currency button_euro">EUR</div>
-			</div>
-
-			<div class="currency-field">
-				<input lass="currency" type="text" autocapitalize="off" autocomplete="off" pattern="[0-9.]*" value="33">
-				<label class="label2">RECEIVER GETS</label>
-				<div class="button_currency button_pound">GBP</div>
-			</div>
-
-
-			<button class="next">Next</button>
-
-			<div class="footer-wrapper">
-					<div class="float-left">© 2018 CurrencyFair</div>
-					<div class="float-right">
-						<a href="#">Help & Support</a><a href="#">Legal Stuff</a>
-					</div>
-			</div>
-
-		</section> 
-	</div><!--
-
-	--><div class="right_column">		
-
-
-			<div style="clear:both;"></div>
-			<dl>
-				<dd class="color-almost-black align-left bold gray-background pad-top-15 pad-bot-15">Sending details</dd>
-				<dt class="border-top pad-top-15 pad-bot-15">You send</dt> <dd class="color-almost-black bold border-top align-right pad-top-15 pad-bot-15">€2000.00</dd>
-				<dt class="color-almost-black border-top bold gray-background pad-top-15 pad-bot-15">Receiving Details</dt> <dd class="border-top color-blue gray-background pad-top-15 pad-bot-15 align-right">As of right now</dd>
-				<dt class="border-top pad-top-15 pad-bot-10">Rate</dt> <dd class="bold border-top align-right pad-top-15 pad-bot-10">0.86022</dd>
-				<dt class="pad-top-10 pad-bot-10">Fee</dt> <dd class="bold align-right pad-top-10 pad-top-10 pad-bot-10">£2.50</dd>
-				<dt class="pad-top-10 pad-bot-10">Delivery date</dt> <dd class="bold align-right pad-top-10 pad-bot-10">25th November</dd>
-				<dt class="pad-top-10 pad-bot-15">Recipient gets</dt> <dd class="color-almost-black bold align-right pad-top-10 pad-bot-15">£1717.94</dd>
-				<dd class="border-top align-left text-orange pad-top-15 pad-bot-15">You save £66.19 compared your bank!</dd> 
-			</dl>
-
- 	
-	</div><!--
-
-	--></div>
-
-
-
-<div class="modal">
-  <div class="modal-content">
-
-	<h1>Identify verification required</h1>
-	<p>For your security, we occasionally require you tp verify your identity by entering a code sent to your mobile device.</p>
-	<hr>
-	<p>Enter the code via SMS to <span class="prefix">+353</span><span class="number">872251177</span></p>
-
-	<input type="number" name="digit1" value="1">
-	<input type="number" name="digit2" value="2">
-	<input type="number" name="digit3">
-	<input type="number" name="digit4">
-	<input type="number" name="digit5">
-	<input type="number" name="digit6">
-
-	Receive a new code 
-	Receive code via call instead
-
-	<hr>
-
-	<button class="next">Verify identity</button>
-	<button class="back">Back</button>
-
-	<a href="#"></a>
-
-  </div>
-
-</div>
-
-
-
-
-
-
-
-
- <div class="container">
- <div ui-view></div>
- </div> 
+	<div class="container">
+		<div ui-view></div>
+	</div> 
 
  </body>
  
-<!-- <script type="text/javascript" src="./node_modules/angular/angular.js"></script>
- --><!-- <script type="text/javascript" src="./node_modules/angular-ui-router/release/angular-ui-router.js"></script>
- -->
- <script type="text/javascript" src="./app/app.js"></script>
+	<script type="text/javascript" src="./node_modules/angular/angular.js"></script>
+	<script type="text/javascript" src="./node_modules/angular-ui-router/release/angular-ui-router.js"></script>
+	<script type="text/javascript" src="./app/app.js"></script>
+	<script src="app/report-listing/report-listing.controller.js"></script>
+	<script src="app/report-listing/report-listing.routes.js"></script>
+
+
 
 </html>
 
