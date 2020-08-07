@@ -1,9 +1,10 @@
-Website uses AngularJS javascript framework but I was focused mainly on "pixel perfect" view rather than programming functionalities.
+Website mockup built with AngularJS  framework.
+Focused mainly on "pixel perfect" view rather than programming functionalities.
 
 ## How to build
 
-npm install
-and start http server with root
+- npm install
+- start http server
 
 ## Deliverables
 
@@ -37,11 +38,8 @@ https://github.com/webextensions/live-css-editor
 - modyfy package.json json and watch and recompiling SASS file automaticaly. 
 
 ### GitHub 
-
 https://github.com/toporny/Currency-Fair
 
 ### URL:
-http://currency-fair.techduinn.com/
-
-
+http://example3.techduinn.com/
 
